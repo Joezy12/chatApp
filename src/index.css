@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.name {
+  width: 100%;
+  height: 50px;
+  border: 2px solid blue;
+
+}
+
+.counter  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.counter h1 {
+  font-size: 60px;
+}
+
+.count-btn {
+  display: flex;
+  gap: 3rem;
+}
+
+.count-btn button {
+  width: 80px;
+  height: 30px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+
+.ex {
+  font-size: 23px;
+}
+
+.logo {
+  width:180px;
+  height: 70px;
+  background: url("https://www.exiap.com/wp-content/uploads/2021/03/wise_ftw_blue_navy_RGB-1.png");
+  background-size:130px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 1.5rem;
+}
+
+.login h1 {
+  font-size: 30px;
+}
+
+.login p {
+font-family: sans-serif;
+font-size: 14px;
+}
+
+.fields {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-fields input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.4);
+  padding-left: 20px;
+}
+
+.login button {
+  width: 550px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background: #9FE870;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.error {
+  width: 500px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  position: absolute;
+  background: white;
+}
+
+@media screen and (max-width: 589px){
+      .navbar {
+        padding: 20px 15px;
+      }
+
+      .fields {
+        width: 350px;
+      }
+
+      .login button {
+        width: 350px;
+      }
+
+      .error {
+        width: 220px ;
+      }
+}
